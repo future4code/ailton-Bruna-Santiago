@@ -48,7 +48,7 @@ function imprimeInformacoesUsuario() {
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
 const nome= prompt("Qual seu nome?")
 const idade= prompt("Qual sua idade?")
-const email= prompt("Qual seu nome?")
+const email= prompt("Qual seu email?")
 
 console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 }
@@ -57,20 +57,27 @@ imprimeInformacoesUsuario("Alice", 28, "alice@gmail.com")
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-
+const cor1= prompt("Qual sua cor favorita1?")
+const cor2= prompt("Qual sua cor favorita2?")
+const cor3= prompt("Qual sua cor favorita3?")
+const cores=[]
+cores.push(cor1, cor2, cor3)
+console.log(cores)
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-const texto= retornaStringEmMaiuscula.toUpperCase()
-  return texto
+ string= string.toUpperCase()
+  return string
 
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
+const custo= Number(prompt("Valor custo"))
+const valorIngresso= Number(prompt("Valor ingresso"))
 
 }
 
@@ -95,13 +102,22 @@ function retornaUltimoElemento(array) {
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+const primeiro= array.shift()
+const ultimo= array.pop()
+array.unshift(ultimo)
+array.push(primeiro)
 
+return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+  string1= string1.toLoWerCaser()
+  string2= string2.toLoWerCaser()
+let comparacao= string1 === string2
 
+return comparacao
 }
 
 // EXERCÍCIO 13
